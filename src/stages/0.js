@@ -1,6 +1,9 @@
+/* eslint-disable prettier/prettier */
+// eslint-disable-next-line prettier/prettier
 import { storage } from '../storage.js'
 import { VenomBot } from '../venom.js'
 import { STAGES } from './index.js'
+// eslint-disable-next-line prettier/prettier
 
 export const initialStage = {
   async exec({ from }) {
