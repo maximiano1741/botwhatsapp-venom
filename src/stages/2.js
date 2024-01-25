@@ -6,7 +6,7 @@ import { STAGES } from './index.js'
 export const stageTwo = {
   async exec(params) {
     const message = params.message.trim()
-    const isMsgValid = /[1|2|3|4|5|#|*]/.test(message)
+    const isMsgValid = /[1|2|3|4|5|6|7|8|9|10|#|*]/.test(message)
 
     let msg =
       '❌ *Digite uma opção válida, por favor.* \n⚠️ ```APENAS UMA OPÇÃO POR VEZ``` ⚠️'
@@ -18,9 +18,8 @@ export const stageTwo = {
         storage[params.from].stage = option.nextStage
       } else {
         msg =
-          `✅ *${menu[message].description}* adicionado com sucesso! \n\n` +
-          '```Digite outra opção```: \n\n' +
-          '\n-----------------------------------\n#️⃣ - ```FINALIZAR pedido``` \n*️⃣ - ```CANCELAR pedido```'
+          `🚌 *${menu[message].description}* Foi a empresa Escolhida \n\n` +
+          '\n-----------------------------------\n#️⃣ - ```COMPRAR``` \n*️⃣ - ```CANCELAR```'
         storage[params.from].itens.push(menu[message])
       }
 
@@ -45,8 +44,8 @@ const options = {
   },
   '#': () => {
     const message =
-      '🗺️ Agora, informe o *ENDEREÇO*. \n ( ```Rua, Número, Bairro``` ) \n\n ' +
-      '\n-----------------------------------\n*️⃣ - ```CANCELAR pedido```'
+      '🗺️ Muito Bem, Vamos lá... \n ↘️*sua viagem é qual* \n 🛣️ ORIGEM?\n\n ↘️Vai para qual\n🛣️ DESTINO?\n\n ↘️Qual a\n📅 DATA DA VIAGEM?\n  ' +
+      '\n-----------------------------------\n*️⃣ - ```CANCELAR COMPRA```'
 
     return {
       message,
