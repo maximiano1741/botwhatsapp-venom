@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { storage } from '../storage.js'
 import { VenomBot } from '../venom.js'
 import { STAGES } from './index.js'
