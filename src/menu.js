@@ -22,21 +22,22 @@ export const menu = {
   6: {
     description: 'Rápido Federal',
     price: 6,
-    },
+  },
   7: {
     description: 'Sampaio',
     price: 6,
-    },
+  },
   8: {
     description: 'Expresso',
     price: 6,
-    },
+  },
   9: {
     description: 'Gontijo',
     price: 6,
-    },
+  },
   10: {
     description: 'Leo - Sacoleiro - SP',
     price: 6,
     },
-}
+    },
+// eslint-disable-next-line prettier/prettier
