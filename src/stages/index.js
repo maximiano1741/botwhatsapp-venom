@@ -12,4 +12,4 @@ export const STAGES = {
   RESUMO: '3',
   PEDIDO: '4',
   FALAR_COM_ATENDENTE: '5',
-}
+},
