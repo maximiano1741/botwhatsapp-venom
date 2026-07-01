@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { VenomBot } from './venom.js'
 import { stages, getStage } from './stages.js'
 
