@@ -1,10 +1,12 @@
+/* eslint-disable prettier/prettier */
+// eslint-disable-next-line prettier/prettier
 import { VenomBot } from './venom.js'
 import { stages, getStage } from './stages.js'
 
 const main = async () => {
   try {
     const venombot = await VenomBot.getInstance().init({
-      session: 'Agencia de Machado - MG',
+      session: 'Delícias da Neide',
       headless: true,
       useChrome: false,
     })

@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { create } from 'venom-bot'
 
 export class VenomBot {
@@ -52,4 +53,17 @@ export class VenomBot {
     if (!this.#venombot) throw new Error('VenomBot not initialized.')
     return await this.#venombot.markUnseenMessage(to)
   }
+}
+
+export const numbers = {
+  1: '1️⃣',
+  2: '2️⃣',
+  3: '3️⃣',
+  4: '4️⃣',
+  5: '5️⃣',
+  6: '6️⃣',
+  7: '7️⃣',
+  8: '8️⃣',
+  9: '9️⃣',
+  10: '🔟',
 }
