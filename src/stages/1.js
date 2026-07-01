@@ -1,3 +1,5 @@
+/* eslint-disable prettier/prettier */
+// eslint-disable-next-line prettier/prettier
 import { VenomBot } from '../venom.js'
 import { menu } from '../menu.js'
 import { storage } from '../storage.js'

@@ -1,3 +1,6 @@
+/* eslint-disable prettier/prettier */
+// eslint-disable-next-line prettier/prettier
+// eslint-disable-next-line prettier/prettier
 import { VenomBot } from '../venom.js'
 import { menu } from '../menu.js'
 import { storage } from '../storage.js'
@@ -6,7 +9,7 @@ import { STAGES } from './index.js'
 export const stageTwo = {
   async exec(params) {
     const message = params.message.trim()
-    const isMsgValid = /[1|2|3|4|5|6|7|8|9|10#|*]/.test(message)
+    const isMsgValid = /[1|2|3|4|5|6|7|8|9|10|#|*]/.test(message)
 
     let msg =
       '❌ *Digite uma opção válida, por favor.* \n⚠️ ```APENAS UMA OPÇÃO POR VEZ``` ⚠️'
@@ -19,8 +22,7 @@ export const stageTwo = {
       } else {
         msg =
           `✅ *${menu[message].description}* adicionado com sucesso! \n\n` +
-          '```Digite outra opção```: \n\n' +
-          '\n-----------------------------------\n#️⃣ - ```FINALIZAR pedido``` \n*️⃣ - ```CANCELAR pedido```'
+          +'\n-----------------------------------\n#️⃣ - ```FINALIZAR``` \n*️⃣ - ```CANCELAR```'
         storage[params.from].itens.push(menu[message])
       }
 
