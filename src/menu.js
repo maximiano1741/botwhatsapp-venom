@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 export const menu = {
   1: {
     description: 'Saritur',
@@ -38,5 +39,5 @@ export const menu = {
   10: {
     description: 'Leo - Sacoleiro - SP',
     price: 6,
-  },
-}
+    },
+    }

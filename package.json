@@ -10,9 +10,14 @@
   },
   "devDependencies": {
     "@rocketseat/eslint-config": "^1.2.0",
-    "nodemon": "^2.0.22"
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.6",
+    "nodemon": "^3.1.14",
+    "prettier": "3.9.4"
   },
   "dependencies": {
-    "venom-bot": "^5.0.20"
+    "@puppeteer/browsers": "^3.0.6",
+    "puppeteer": "^25.3.0",
+    "venom-bot": "^4.2.1"
   }
 }

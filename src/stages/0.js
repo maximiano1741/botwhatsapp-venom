@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { storage } from '../storage.js'
 import { VenomBot } from '../venom.js'
 import { STAGES } from './index.js'
@@ -9,14 +10,13 @@ export const initialStage = {
     const venombot = await VenomBot.getInstance()
 
     const message = `
-      👋 Olá, Viajante!
-      👨‍💻Tudo bem!, Seja bem-vindo(a) ao canal de
-       *atendimento * da ${venombot.getSessionName}.
+      👋 Olá, como vai?
+      Eu sou Carlos, o *assistente virtual* da ${venombot.getSessionName}.
       *Posso te ajudar?* 🙋‍♂️
       -----------------------------------
-      1️⃣ - COMPRAR PASSAGEM
-      2️⃣ - ENCOMENDA
-      0️⃣ - INFORMAÇÃO
+      1️⃣ - FAZER PEDIDO
+      2️⃣ - VERIFICAR TAXA DE ENTREGA
+      0️⃣ - FALAR COM ATENDENTE
     `
     await venombot.sendText({ to: from, message })
   },

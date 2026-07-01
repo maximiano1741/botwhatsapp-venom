@@ -1,5 +1,6 @@
 /* eslint-disable prettier/prettier */
-// eslint-disable-next-line prettier/prettier
+/* eslint-disable no-unused-vars */
+/* eslint-disable prettier/prettier */
 import { VenomBot } from '../venom.js'
 import { menu } from '../menu.js'
 import { storage } from '../storage.js'
@@ -10,7 +11,7 @@ import { STAGES } from './index.js'
 export const stageOne = {
   async exec(params) {
     const message = params.message.trim()
-    const isMsgValid = /[0|1|2]/.test(message)
+    const isMsgValid = /[0|1|2|3|4]/.test(message)
 
     let msg =
       '❌ *Digite uma opção válida, por favor.* \n⚠️ ```APENAS UMA OPÇÃO POR VEZ``` ⚠️'
@@ -36,7 +37,7 @@ export const stageOne = {
 
 const options = {
   1: () => {
-    let message = '🚌 Qual empresa deseja Atendimento?  🚌\n\n'
+    let message = '🚨  CARDÁPIO  🚨\n\n'
 
     Object.keys(menu).forEach((value) => {
       message += `${numbers[value]} - _${menu[value].description}_ \n`
@@ -49,9 +50,7 @@ const options = {
   },
   2: () => {
     const message =
-      '\n-----------------------------------\n1️⃣ - ```FAZER PEDIDO``` \n0️⃣ - ```FALAR COM ATENDENTE```\n\n' +
-      neighborhoods +
-      '\n-----------------------------------\n1️⃣ - ```FAZER PEDIDO``` \n0️⃣ - ```FALAR COM ATENDENTE``` '
+      '\n-----------------------------------\n1️⃣ - ```FAZER PEDIDO``` \n0️⃣ - ```FALAR COM ATENDENTE```\n\n'
 
     return {
       message,
@@ -73,9 +72,4 @@ const numbers = {
   3: '3️⃣',
   4: '4️⃣',
   5: '5️⃣',
-  6: '6️⃣',
-  7: '7️⃣',
-  8: '8️⃣',
-  9: '9️⃣',
-  10: '10️⃣',
-};
+}

@@ -22,7 +22,8 @@ export const stageTwo = {
       } else {
         msg =
           `✅ *${menu[message].description}* adicionado com sucesso! \n\n` +
-          +'\n-----------------------------------\n#️⃣ - ```FINALIZAR``` \n*️⃣ - ```CANCELAR```'
+          '```Digite outra opção```: \n\n' +
+          '\n-----------------------------------\n#️⃣ - ```FINALIZAR pedido``` \n*️⃣ - ```CANCELAR pedido```'
         storage[params.from].itens.push(menu[message])
       }
 
@@ -47,8 +48,8 @@ const options = {
   },
   '#': () => {
     const message =
-      '🗺️ Agora, informe o *ENDEREÇO*. \n ( ```Rua, Número, Bairro``` ) \n\n ' +
-      '\n-----------------------------------\n*️⃣ - ```CANCELAR pedido```'
+      '🗺️ Muito Bem, Vamos lá... \n ↘️*sua viagem é qual* \n 🛣️ ORIGEM?\n\n ↘️Vai para qual\n🛣️ DESTINO?\n\n ↘️Qual a\n📅 DATA DA VIAGEM?\n  ' +
+      '\n-----------------------------------\n*️⃣ - ```CANCELAR COMPRA```'
 
     return {
       message,
